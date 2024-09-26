@@ -45,9 +45,6 @@ To resume the pretraining from previous steps (e.g., 10k), you can run:
 
 ```
 
-- `ckpt=40000` denotes our gradient accumulation step is 4.
-- `method=random` is the random data selection. You can replace it with `mates` for MATES after the first 10k steps.
-
 ### 3.2 Synthetic In-doamain Data Generation
 
 After the first 10k steps, we can start the MATES data selection process every 10k steps. One data selection process consists of four steps:
@@ -57,7 +54,6 @@ After the first 10k steps, we can start the MATES data selection process every 1
 ```bash
 ```
 
-- For the 10k checkpoint, `method=random`, but for the following, `method=mates`.
 
 2️⃣ Train data influence model:
 
@@ -72,24 +68,14 @@ After the first 10k steps, we can start the MATES data selection process every 1
 1️⃣ It is advised to run the evaluation after the decay stage for intermediate checkpoints for better stability.
 
 ```bash
-model_name=pythia-410m \
-method=mates \
-ckpt=80000 \
-decay=true \
-bash scripts/pretrain.sh
+
 ```
 
 2️⃣ We provide a simple evaluation example here and you can modify the parameters based on your needs.
 
 ```bash
-model_name=pythia-410m \
-method=mates \
-ckpt=80800 \
-bash scripts/eval.sh
-```
 
-- After running the evaluation script, you can find the results in the `results/c4/$model/$method/iter-$ckpt-ckpt/results.json`.
+```
 
 ## 4 Citation
 
-Please cite our work
