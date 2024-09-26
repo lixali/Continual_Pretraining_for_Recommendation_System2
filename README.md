@@ -47,13 +47,22 @@ query_pos_neg_tokens_id_gen.py
 - We provide scritps to reporduce the synthetic in-domain data (generate various output for different sequence length) that we used
 
 ```bash
+cd synthetic_amazonreview/reproduce/search
+bash search.sh
+
+cd synthetic_amazonreview/reproduce/build_train
+bash build_train_t5.sh
 
 ```
 
 - We provide scritps to reporduce the synthetic in-domain data (only generate the last output given the sequence) that we used
 
 ```bash
+cd synthetic_amazonreview/reproduce/search_1
+bash search.sh
 
+cd synthetic_amazonreview/reproduce/build_train_1
+bash build_train_t5.sh
 ```
 
 
@@ -62,11 +71,8 @@ query_pos_neg_tokens_id_gen.py
 - We provide a training script to reproduce the BERT classifider model
 
 ```bash
-
-```
-
-- We provide an inference script to reproduce the data filtered by BERT classifier
-```bash
+cd bert/train
+bash launch_train_torchx.sh
 
 ```
 
