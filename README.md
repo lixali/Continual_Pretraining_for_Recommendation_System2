@@ -47,7 +47,6 @@ To resume the pretraining from previous steps (e.g., 10k), you can run:
 
 ### 3.2 Synthetic In-doamain Data Generation
 
-After the first 10k steps, we can start the MATES data selection process every 10k steps. One data selection process consists of four steps:
 
 1️⃣ Get oracle data influence:
 
@@ -61,7 +60,6 @@ After the first 10k steps, we can start the MATES data selection process every 1
 
 ```
 
-- The selected data will be saved in `data/c4/pythia-410m/mates/40000`.
 
 ### 3.3 BERT classififer
 
