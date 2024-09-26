@@ -24,6 +24,7 @@ conda env create -f environment.yml
 ```
 
 ## 2 Dataset
+The dataset we used is sample-350BT from fineweb dataset. 
 
 ## 3 Experiments
 
