@@ -44,14 +44,13 @@ query_pos_neg_tokens_id_gen.py
 
 ### 3.2 Synthetic In-doamain Data Generation
 
-
-1️⃣ Get oracle data influence:
+- We provide scritps to reporduce the synthetic in-domain data (generate various output for different sequence length) that we used
 
 ```bash
+
 ```
 
-
-2️⃣ Train data influence model:
+- We provide scritps to reporduce the synthetic in-domain data (only generate the last output given the sequence) that we used
 
 ```bash
 
@@ -60,13 +59,13 @@ query_pos_neg_tokens_id_gen.py
 
 ### 3.3 BERT classififer
 
-1️⃣ We provide a training script to reproduce the BERT classifider model
+- We provide a training script to reproduce the BERT classifider model
 
 ```bash
 
 ```
 
-2️⃣ We provide an inference script to reproduce the data filtered by BERT classifier
+- We provide an inference script to reproduce the data filtered by BERT classifier
 ```bash
 
 ```
