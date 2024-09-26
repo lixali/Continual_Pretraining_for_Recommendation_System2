@@ -31,15 +31,16 @@ The dataset we used is sample-350BT from fineweb dataset.
 
 ### 3.1 Self Reward
 
-Our pretraining is run stage by stage to facilitate the model-aware data selection. Each stage consists of 10k steps. For instance, in the initial warmup 10k steps, you can run:
+1️⃣ We provide a training script to reproduce the BERT classifider model
 
 ```bash
+cd self_reward/reproduce
+bash search.sh
 
+cd 
 ```
 
-- `ckpt=0` denotes we are training from scratch.
 
-To resume the pretraining from previous steps (e.g., 10k), you can run:
 
 ```bash
 
@@ -63,14 +64,13 @@ To resume the pretraining from previous steps (e.g., 10k), you can run:
 
 ### 3.3 BERT classififer
 
-1️⃣ It is advised to run the evaluation after the decay stage for intermediate checkpoints for better stability.
+1️⃣ We provide a training script to reproduce the BERT classifider model
 
 ```bash
 
 ```
 
-2️⃣ We provide a simple evaluation example here and you can modify the parameters based on your needs.
-
+2️⃣ We provide an inference script to reproduce the data filtered by BERT classifier
 ```bash
 
 ```
