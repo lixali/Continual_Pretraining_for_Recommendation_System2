@@ -1,0 +1,16 @@
+data
+text_alike_embeddings
+t5_*_best_dev_*
+text_alike_after_search
+src/__pycache__/
+utils/__pycache__/
+text_alike_after_search_with_duplate_items/
+text_alike_embeddings_with_duplcate_items
+old_files_not_used
+t5_*_best_dev
+data_taste_synthetic/
+convert_state_dict.py
+create_txt.py
+train.txt
+train_fusin_0.txt
+__pycache__

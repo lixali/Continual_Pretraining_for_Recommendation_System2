@@ -1,0 +1,2 @@
+
+cat t5_tokenzied_negatives_samples_sharded/*jsonl > t5_tokenized_negatives_samples_sharded_total.jsonl

@@ -1,0 +1,12 @@
+# defaults scheduler args
+[mast_conda]
+hpcIdentity = ads_content_understanding
+hpcJobOncall = megataxon
+workspace_fbpkg_name = metaconda_demo
+rmAttribution=ads_global_tc_ads_score
+tags=ads_ranking_taxonomy_relevance
+modelTypeName=ads_ugc_relevance
+
+# sets the default scheduler to mast_conda
+[cli:run]
+scheduler = mast_conda
