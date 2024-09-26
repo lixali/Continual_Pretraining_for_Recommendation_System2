@@ -6,9 +6,9 @@
 - [1 Environment](#1-environment)
 - [2 Dataset](#2-dataset)
 - [3 Experiments](#3-experiments)
-  - [3.1 Self Reward](#31-Self Reward)
-  - [3.2 Synthetic In-doamain Data Generation](#32-Synthetic In-doamain Data Generation)
-  - [3.3 BERT classififer](#33-BERT classififer)
+  - [3.1 Self Reward](#31-Self-Reward)
+  - [3.2 Synthetic In-doamain Data Generation](#32-Synthetic-In-doamain-Data-Generation)
+  - [3.3 BERT classififer](#33-BERT-classififer)
 - [4 Citation](#4-citation)
 
 ## 1 Environment
