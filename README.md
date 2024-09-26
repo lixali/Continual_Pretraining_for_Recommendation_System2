@@ -24,20 +24,21 @@ conda env create -f environment.yml
 ```
 
 ## 2 Dataset
-The dataset we used is sample-350BT from fineweb dataset. 
+The out-of-domain dataset we used is sample-350BT from fineweb dataset. The in-domain dataset we used in AmazonReivew beauty, toys and sports
 
 ## 3 Experiments
 
 
 ### 3.1 Self Reward
 
-1️⃣ We provide a training script to reproduce the BERT classifider model
+1️⃣ We provide scripts to generate contrastive pairs for T5 based recommendation embedding model training
 
 ```bash
 cd self_reward/reproduce
 bash search.sh
 
-cd 
+cd self_reward/build_train
+query_pos_neg_tokens_id_gen.py
 ```
 
 
