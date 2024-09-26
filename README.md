@@ -1,10 +1,5 @@
 # Continual Pretraining for Recommendation System
 
-<br>
-<p align="center">
-<img src="assets/MATES.png" width="600">
-</p>
-<br>
 
 ## Quick Links
 
